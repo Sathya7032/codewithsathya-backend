@@ -161,6 +161,11 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR,'static')
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+
 customColorPalette = [
         {
             'color': 'hsl(4, 90%, 58%)',
@@ -356,7 +361,7 @@ import os
 
 DEFAULT_FILE_STORAGE = "storages.backends.s3.S3Storage"
 
-AWS_S3_ACCESS_KEY_ID = "red_red"
-AWS_S3_SECRET_ACCESS_KEY = "test_test"
+AWS_S3_ACCESS_KEY_ID = ""
+AWS_S3_SECRET_ACCESS_KEY = ""
 AWS_STORAGE_BUCKET_NAME = "ecommerce0509"
 AWS_QUERYSTRING_AUTH=False
