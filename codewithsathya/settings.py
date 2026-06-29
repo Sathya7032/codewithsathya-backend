@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-uf3)4%mnq7pou^o9n2bn%=q_+af$__v8ik1k12n(xa)#7ke^00
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['10.0.2.2', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['10.0.2.2', 'localhost', '127.0.0.1', 'backend.codewithsathya.in','*']
 
 
 # Application definition
@@ -80,6 +80,13 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'codewithsathya.wsgi.application'
+
+CORS_ALLOW_ALL_ORIGINS = False
+
+CORS_ALLOWED_ORIGINS = [
+    "https://codewithsathya.in",
+    "https://www.codewithsathya.in",
+]
 
 
 # Database
